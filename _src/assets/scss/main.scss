@@ -1,5 +1,6 @@
 @import "core/reset";
 @import "core/variables";
+@import "components/buttons";
 
 /* 1rem = 10px */
 html {
@@ -20,5 +21,6 @@ a {
 	}
 }
 @import "./layouts/header";
-@import "./pages/main-page";
+@import "components/hero";
+@import "./pages/home";
 @import "./layouts/footer";
