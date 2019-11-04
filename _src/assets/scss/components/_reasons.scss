@@ -13,6 +13,18 @@
             text-align: center;
             text-transform: capitalize;
             padding: 3rem 1.5rem 4.5rem 1.5rem;
+
+           @media all and (min-width: 768px) {
+            line-height: 4.5rem;
+            font-size: 2.6rem;
+            padding: 3rem 16rem 4.5rem 15.8rem;
+           }
+           @media all and (min-width: 1200px) {
+            line-height: 4.5rem;
+            font-size: 3.2rem;
+            padding: 6rem 27.5rem 4.5rem 27.5rem;
+           }
+
         }
         &__options {
             display: grid;
@@ -20,6 +32,14 @@
             grid-template-rows: 1fr 1fr 1fr;
             align-items: center;
             justify-content: center;
+            @media all and (min-width: 768px) {
+               grid-template-columns: 1fr 1fr 1fr;
+               grid-template-rows: 11.2rem;
+               
+               }
+               @media all and (min-width: 1200px) {
+               
+               }
 
            &__items {
 
@@ -34,8 +54,8 @@
                 text-align: center;
                }
                &__text {
-                width: 18rem;
-                height: 6.3rem;
+                // width: 18rem;
+                // height: 6.3rem;
                 font-family: $mainFont;
                 font-size: 1.8rem;
                 font-weight: normal;
@@ -45,7 +65,7 @@
                 letter-spacing: normal;
                 color: $black;
                 text-align: center;
-                margin-bottom: 4.5rem;
+                 
                }
             }
         }
@@ -64,6 +84,16 @@
             letter-spacing: normal;
             text-align: center;
             margin-bottom: 6rem;
+            transition: all 0.5s ease-in-out;
+            text-decoration: none;
+         
+        &:hover {
+            color:$orange;
+            background: $white;
+            border: solid 2px $orange;
+            width: 20rem;
+            height: 6rem;
+            } 
         }
 }
     

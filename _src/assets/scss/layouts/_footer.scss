@@ -10,7 +10,23 @@
         border-radius: 50%;
         text-align: center;
         position:relative;
-        transform: translateY(-2.2rem);
+        animation-name: bounce;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+     @keyframes bounce {
+         0% {
+            // position: absolute;
+             transform: translateY(5px);
+         }
+          50% {
+            //  position: absolute;
+              transform: translateY(-45px);
+        }
+         100% {
+            // position: absolute;
+             transform: translateY(5px);
+         }
     }
     &__container {
         display:flex;
