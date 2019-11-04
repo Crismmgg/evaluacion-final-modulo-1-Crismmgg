@@ -1,30 +1,45 @@
 <footer class= "footer">
-    <a href="#home">
-        <button>
-            <img src="./assets/images/ico-arrow.svg" alt="botón home">
-        </button>
-    </a>
+    <button class= "footer__button">
+        <a href="./index.html#top" title= "home">
+            <img src="./assets/images/ico-arrow.svg" alt="botón home"> 
+         </a>
+    </button>
     <div class= "footer__container">
-       <nav class= "footer__container__menu">
-           <ul class= "footer__container__menu__list">
-               <li class= "footer__container__menu__list__items">articles</li>
-               <li class= "footer__container__menu__list__items">books</li>
-               <li class= "footer__container__menu__list__items">events</li>
-               <li class= "footer__container__menu__list__items">reasons</li>
-               <li class= "footer__container__menu__list__items">tips</li>
+       <nav>
+           <ul class= "footer__container__menu">
+               <li>
+                   <a class= "footer__container__menu__list" href="#">articles</a>
+               </li>
+               <li>
+                    <a class= "footer__container__menu__list" href="#">books</a>
+               </li>
+               <li >
+                    <a class= "footer__container__menu__list" href="#">events</a>
+               </li>
+               <li>
+                    <a class= "footer__container__menu__list" href="#">reasons</a>
+               </li>
+               <li>
+                    <a class= "footer__container__menu__list" href="#">tips</a>
+               </li>
            </ul>
-
        </nav> 
-       <nav class= "footer__container__social">
-            <ul class= "footer__container__social__list">
-                    <li class= "footer__container__social__list__items">twitter</li>
-                    <li class= "footer__container__social__list__items">instagram</li>
-                    <li class= "footer__container__social__list__items">mastodon.social</li>
+       <nav>
+            <ul class= "footer__container__social">
+                    <li>
+                        <a class= "footer__container__social__list" href="#">twitter</a>
+                    </li>
+                    <li>
+                        <a class= "footer__container__social__list" href="#">instagram</a>
+                    </li>
+                    <li>
+                        <a class= "footer__container__social__list" href="#">mastodon.social</a>
+                    </li>
             </ul>
         </nav> 
-        <div class= "footer__container__copy">
+        <aside class= "footer__container__copy">
             <copy> &copy 2017 </copy>
-            <span> we &#10084; components </span>
-        </div> 
+            <span> we <span class= "footer__container__copy--heart">&#10084;</span> components </span>
+        </aside> 
     </div>
 </footer>

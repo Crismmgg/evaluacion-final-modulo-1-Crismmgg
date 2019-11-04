@@ -1,0 +1,82 @@
+.footer  {
+    background: $darkBlue;
+    // height: 46.6rem;
+    text-align: center;
+   
+    &__button {
+        width: 4.5rem;
+        height: 4.5rem;
+        background: $white;
+        border-radius: 50%;
+        text-align: center;
+        position:relative;
+        transform: translateY(-2.2rem);
+    }
+    &__container {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.5rem;
+        
+        
+        &__menu {
+            list-style: none;
+            text-transform: uppercase;
+            line-height: 3rem;
+            font-family: $mainFont;
+            font-size: 1.6rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: $white;
+
+            &__list {
+                &:visited {
+                text-decoration: none;
+                color: $white;
+                }
+            }
+        }
+        &__social {
+            list-style: none;
+            text-transform: uppercase;
+            line-height: 3rem;
+            font-family: $mainFont;
+            font-size: 1.6rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: $white;
+            padding-top: 3rem;
+            &__list {
+                &:visited {
+                text-decoration: none;
+                color: $white;
+                }
+            }
+        } 
+        &__copy {
+            display: flex;
+            flex-direction: column;
+            line-height: 3rem;
+            font-family: $mainFont;
+            font-size: 1.4rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: $white;
+            padding-top: 3rem;
+            padding-bottom: 4.5rem;
+            &--heart {
+                color: $orange;
+            }
+        }  
+     }
+}
