@@ -1,6 +1,12 @@
 .reasons {
     background: $iceBlue;
     text-align: center;
+    @media all and (min-width: 768px) {
+        padding: 0 3rem 0 3.8rem;
+        }
+    @media all and (min-width: 1200px) {
+        padding: 0 8.5rem 0 8.12rem;
+        }
         &__title {
             line-height: 3rem;
             font-family: $titleFont;
@@ -17,12 +23,12 @@
            @media all and (min-width: 768px) {
             line-height: 4.5rem;
             font-size: 2.6rem;
-            padding: 3rem 16rem 4.5rem 15.8rem;
+            padding: 3rem 13rem 4.5rem 12rem;
            }
            @media all and (min-width: 1200px) {
             line-height: 4.5rem;
             font-size: 3.2rem;
-            padding: 6rem 27.5rem 4.5rem 27.5rem;
+            padding: 6rem 19rem 4.5rem 19.4rem;
            }
 
         }
@@ -32,16 +38,22 @@
             grid-template-rows: 1fr 1fr 1fr;
             align-items: center;
             justify-content: center;
+            grid-gap: 4.5rem;
+            
             @media all and (min-width: 768px) {
-               grid-template-columns: 1fr 1fr 1fr;
-               grid-template-rows: 11.2rem;
-               
+               grid-template-columns: 21rem 21rem 21rem;
+               grid-template-rows: auto;
+               grid-gap: 2.77rem;
+               padding: 0 3rem 0 3.8rem;
                }
-               @media all and (min-width: 1200px) {
-               
-               }
+            @media all and (min-width: 1200px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 2.62;
+            // padding: 0 8.5rem 0 8.12rem;
+            }
 
            &__items {
+               
 
                &__title {
                 font-family: $titleFont;
@@ -54,8 +66,6 @@
                 text-align: center;
                }
                &__text {
-                // width: 18rem;
-                // height: 6.3rem;
                 font-family: $mainFont;
                 font-size: 1.8rem;
                 font-weight: normal;
@@ -86,6 +96,14 @@
             margin-bottom: 6rem;
             transition: all 0.5s ease-in-out;
             text-decoration: none;
+            margin-top: 4.5rem;
+            @media all and (min-width: 768px) {
+                margin-top: 6rem;
+                width: 21.1rem;
+            }
+            @media all and (min-width: 1200px) {
+                width: 25.5rem;
+            }
          
         &:hover {
             color:$orange;
