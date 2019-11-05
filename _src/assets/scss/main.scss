@@ -1,25 +1,23 @@
+
+
+
+// GENERALES
+
 @import "core/reset";
 @import "core/variables";
-@import "components/buttons";
 
-/* 1rem = 10px */
-html {
-	font-size: 62.5%;
-}
-body {
-	height: 100vh;
-}
-a {
-	&:link,
-	&:visited,
-	&:hover,
-	&:active {
-	  text-decoration: none;
-	}
-}
+
+
+
+// BODY
+
+// Header
 @import "./layouts/header";
+
+// Main
 @import "./components/hero";
 @import "./components/tips";
 @import "./components/reasons";
-@import "./pages/home";
+
+// Footer
 @import "./layouts/footer";
