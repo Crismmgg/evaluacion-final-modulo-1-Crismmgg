@@ -1,11 +1,12 @@
 .reasons {
+
     background: $iceBlue;
     text-align: center;
-    @media all and (min-width: 768px) {
-        padding: 0 3rem 0 3.8rem;
+        @media all and (min-width: 768px) {
+            padding: 0 3rem 0 3.8rem;
         }
-    @media all and (min-width: 1200px) {
-        padding: 0 8.5rem 0 8.12rem;
+        @media all and (min-width: 1200px) {
+            padding: 0 8.5rem 0 8.12rem;
         }
         &__title {
             line-height: 3rem;
@@ -20,17 +21,16 @@
             text-transform: capitalize;
             padding: 3rem 1.5rem 4.5rem 1.5rem;
 
-           @media all and (min-width: 768px) {
-            line-height: 4.5rem;
-            font-size: 2.6rem;
-            padding: 3rem 13rem 4.5rem 12rem;
-           }
+            @media all and (min-width: 768px) {
+                line-height: 4.5rem;
+                font-size: 2.6rem;
+                padding: 3rem 13rem 4.5rem 12rem;
+            }
            @media all and (min-width: 1200px) {
-            line-height: 4.5rem;
-            font-size: 3.2rem;
-            padding: 6rem 19rem 4.5rem 19.4rem;
-           }
-
+                line-height: 4.5rem;
+                font-size: 3.2rem;
+                padding: 6rem 19rem 4.5rem 19.4rem;
+            }
         }
         &__options {
             display: grid;
@@ -44,38 +44,33 @@
                grid-template-columns: 21rem 21rem 21rem;
                grid-template-rows: auto;
                grid-gap: 2.77rem;
-               padding: 0 3rem 0 3.8rem;
                }
             @media all and (min-width: 1200px) {
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 2.62;
-            // padding: 0 8.5rem 0 8.12rem;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 2.62;
             }
 
            &__items {
-               
-
                &__title {
-                font-family: $titleFont;
-                font-size: 1.8rem;
-                font-weight: bold;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 3rem;
-                letter-spacing: normal;
-                text-align: center;
-               }
+                    font-family: $titleFont;
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 3rem;
+                    letter-spacing: normal;
+                    text-align: center;
+                }
                &__text {
-                font-family: $mainFont;
-                font-size: 1.8rem;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 3rem;
-                letter-spacing: normal;
-                color: $black;
-                text-align: center;
-                 
+                    font-family: $mainFont;
+                    font-size: 1.8rem;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 3rem;
+                    letter-spacing: normal;
+                    color: $black;
+                    text-align: center; 
                }
             }
         }
@@ -103,14 +98,13 @@
             }
             @media all and (min-width: 1200px) {
                 width: 25.5rem;
-            }
-         
-        &:hover {
-            color:$orange;
-            background: $white;
-            border: solid 2px $orange;
-            width: 20rem;
-            height: 6rem;
+            }    
+            &:hover {
+                color:$orange;
+                background: $white;
+                border: solid 2px $orange;
+                width: 20rem;
+                height: 6rem;
             } 
         }
 }

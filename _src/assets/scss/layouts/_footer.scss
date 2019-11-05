@@ -1,8 +1,7 @@
 .footer  {
+
     background: $darkBlue;
-    // height: 46.6rem;
     text-align: center;
-   
     &__button {
         width: 4.5rem;
         height: 4.5rem;
@@ -11,20 +10,17 @@
         text-align: center;
         position:relative;
         animation-name: bounce;
-        animation-duration: 2s;
+        animation-duration: 5s;
         animation-iteration-count: infinite;
     }
      @keyframes bounce {
          0% {
-            // position: absolute;
              transform: translateY(5px);
          }
           50% {
-            //  position: absolute;
               transform: translateY(-45px);
         }
          100% {
-            // position: absolute;
              transform: translateY(5px);
          }
     }
@@ -34,7 +30,7 @@
         justify-content: center;
         align-items: center;
         padding-top: 1.5rem;
-        
+
         @media all and (min-width: 768px) {
             flex-direction: row;
             justify-content: space-between;
@@ -46,8 +42,6 @@
             padding: 1.5rem 37rem 4.5rem 37rem;
             align-items: flex-start;
         }
-        
-        
         &__menu {
             list-style: none;
             text-transform: uppercase;
@@ -63,6 +57,12 @@
 
             &__list {
                 cursor: pointer;
+                transition: all 0.5s ease-in-out;
+                &:hover {
+                    padding: 0.5rem;
+                    background: $lightBlue;
+                    border-radius: 0.3rem;
+                }
                 &:visited {
                 color: $white;
                 }
@@ -73,7 +73,6 @@
                 width: 21rem;
             }
         }
-        
         &__social {
             list-style: none;
             text-transform: uppercase;
@@ -89,6 +88,12 @@
             padding-top: 3rem;
             &__list {
                 cursor: pointer;
+                transition: all 0.5s ease-in-out;
+                &:hover {
+                    padding: 0.5rem;
+                    background: $lightBlue;
+                    border-radius: 0.3rem;
+                }
                 &:visited {
                 color: $white;
                 }
@@ -99,8 +104,6 @@
                 padding-top: 0rem;
                 width: 21rem;
             }
-            @media all and (min-width: 1200px) {
-                }
         } 
         &__copy {
             display: flex;
@@ -125,9 +128,6 @@
                 padding-top: 0rem;
                 width: 21rem;
             }
-            @media all and (min-width: 1200px){
-            }
         }  
-     
     }
 }
